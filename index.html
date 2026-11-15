@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Расписание занятий</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f6fc;
+        }
+
+        h1 {
+            text-align: center;
+            color: #183b68;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border: 2px solid black;
+            border-spacing: 3px;
+            text-align: center;
+        }
+
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        /* Заголовок таблицы */
+        .title {
+            background-color: #183b68;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* Названия дней недели */
+        th {
+            background-color: darkblue;
+            color: white;
+        }
+
+        /* Чередование цветов строк */
+        tr.lesson:nth-child(even) {
+            background-color: white;
+        }
+
+        tr.lesson:nth-child(odd) {
+            background-color: lightblue;
+        }
+
+        /* Большая перемена */
+        .break {
+            background-color: lightgreen;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .note {
+            text-align: center;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Расписание занятий</h1>
+
+    <table>
+
+        <tr>
+            <td colspan="6" class="title">
+                Расписание 9 класса
+            </td>
+        </tr>
+
+        <tr>
+            <th>Урок</th>
+            <th>Пн</th>
+            <th>Вт</th>
+            <th>Ср</th>
+            <th>Чт</th>
+            <th>Пт</th>
+        </tr>
+
+        <tr class="lesson">
+            <td>1</td>
+            <td>Русский</td>
+            <td>История</td>
+            <td>Алгебра</td>
+            <td>Физика</td>
+            <td>География</td>
+        </tr>
+
+        <tr class="lesson">
+            <td>2</td>
+            <td>Алгебра</td>
+            <td>Биология</td>
+            <td>Русский</td>
+            <td>История</td>
+            <td>Алгебра</td>
+        </tr>
+
+        <tr class="lesson">
+            <td>3</td>
+            <td>Физика</td>
+            <td>Алгебра</td>
+            <td>Химия</td>
+            <td>Русский</td>
+            <td>Литература</td>
+        </tr>
+
+        <tr>
+            <td colspan="6" class="break">
+                Большая перемена
+            </td>
+        </tr>
+
+        <tr class="lesson">
+            <td>4</td>
+            <td>История</td>
+            <td>Русский</td>
+            <td>Физика</td>
+            <td>Биология</td>
+            <td rowspan="2">Информатика</td>
+        </tr>
+
+        <tr class="lesson">
+            <td>5</td>
+            <td>Физкультура</td>
+            <td>География</td>
+            <td>Английский</td>
+            <td>Алгебра</td>
+        </tr>
+
+    </table>
+
+    <p class="note">
+        Начало занятий: 08:30
+    </p>
+
+</body>
+</html>
